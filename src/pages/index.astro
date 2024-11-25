@@ -3,13 +3,26 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import forside from "../assets/images/forside.webp";
+import landingpage from "../assets/images/landingpage.webp";
+import landingpage_1 from "../assets/images/landingpage_1.webp";
+import landingpage_2 from "../assets/images/landingpage_2.webp";
+import landingpage_3 from "../assets/images/landingpage_3.webp";
+import landingpage_4 from "../assets/images/landingpage_4.webp";
+import om from "../assets/images/om.webp";
+import verdensskove from "../assets/images/verdensskove.webp";
+
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+			<Image class="" src={forside} alt="forside"/>
+			<Image class="" src={landingpage} alt="forside"/>
+			<Image class="" src={landingpage_1} alt="forside"/>
+			<Image class="" src={landingpage_2} alt="forside"/>
+			<Image class="" src={landingpage_3} alt="forside"/>
+			<Image class="" src={landingpage_4} alt="forside"/>
+			<Image class="" src={om} alt="forside"/>
+			<Image class="" src={landingpage_4} alt="forside"/>
+			<Image class="" src={verdensskove} alt="forside"/>
+
 </MainLayout>
