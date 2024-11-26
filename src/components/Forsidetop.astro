@@ -1,0 +1,39 @@
+---
+import Button from "../components/Button.astro";
+import { Image } from 'astro:assets';
+import forside from "../assets/images/forside.webp";
+import landingpage from "../assets/images/landingpage.webp";
+---
+<div class="bg-creamywhite">
+
+    <section class="relative w-full h-screen">
+        <!-- Billedet, som skal være bag teksten -->
+        <Image class="absolute top-0 left-0 w-full lg:h-200 object-cover z-0" src={forside} alt="forsidebillede"/>
+      
+        <!-- Teksten og knappen, som skal være foran billedet -->
+        <div class="relative z-10 pl-16 pt-64">
+          <h1 class="font-pennypacker lg:text-h1 text-white">HØJSKOLE I UDLANDET</h1>
+          <p class="font-sans lg:text-h5 font-light text-white">Tag på dit livs eventyr med andre unge</p>
+          <button class="font-sans text-white lg:pt-8 ">SE DESTINATIONER</button>
+        </div>
+      </section>
+      
+<section>
+    <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
+    <Image class="" src={landingpage} alt="vandring"/>
+    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
+    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
+    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">Vi glæder os til at lære dig at kende!</p>
+    <button class="font-sans text-black lg:pt-8 ">TILMELD</button>
+    <button class="font-sans text-black lg:pt-8 ">TILMELD INFOMØDE</button>
+    <button class="font-sans text-black lg:pt-8 ">BLIV OPDATERET</button>
+</section>
+
+<section>
+    <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil">VÆLG DIN DRØMMEDESTINATION</h3>
+    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">Vi har pakkerejser til adskillige eventyrlige steder i verden. Vælg din drømmedestination nedenfor eller se det fulde overblik under “Se destinationer.”</p>
+    <button class="font-sans text-black lg:pt-8 ">SE DESTINATIONER</button>
+</section>
+
+
+</div>
