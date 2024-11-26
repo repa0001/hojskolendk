@@ -23,8 +23,8 @@ import landingpage from "../assets/images/landingpage.webp";
     
   </section>
   
-      
-<section class="pt-64 text-center lg:text-left px-8 lg:px-0">
+<!--SECTION I MOBILVERSION, SKJULT I DESKTOP -->
+<section class="pt-64 text-center lg:text-left px-8 lg:px-0 block lg:hidden">
     <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil pb-6 text-center lg:text-left">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
     <Image class="rounded-[30px]" src={landingpage} alt="vandring"/>
     <p class="pt-8 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
@@ -39,6 +39,26 @@ import landingpage from "../assets/images/landingpage.webp";
     <Button variant="primary" size="small" href="">BLIV OPDATERET</Button>
   </div>
 </section>
+
+<!--SECTION MED GRID I DESKTOPVERSION, SKJULT I MOBIL -->
+<section class="pt-64 px-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:block hidden">
+  <!-- Venstre kolonne med tekst -->
+  <div class="col-span-1">
+    <h3 class="text-black font-pennypacker lg:text-h3 pb-6">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
+    <p class="pt-8 font-sans lg:text-broedtekst">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
+    <p class="pt-4 font-sans lg:text-broedtekst">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
+    <p class="pt-4 font-sans lg:text-broedtekst">Vi glæder os til at lære dig at kende!</p>
+  </div>
+
+  <!-- Højre kolonne med billede -->
+  <div class="col-span-1">
+    <Image class="rounded-[30px] w-full h-full object-cover" src={landingpage} alt="vandring"/>
+  </div>
+</section>
+
+
+
+
 
 <section class="pt-32 md:pt-64 pb-32 md:pb-64 text-center">
     <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil md:pb-4 pb-2 px-8 lg:px-0">VÆLG DIN DRØMMEDESTINATION</h3>
