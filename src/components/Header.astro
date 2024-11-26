@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.png";
 ---
 <div class="flex flex-row">
     <!-- LOGO OG MENUPUNKTER -->
-    <div x-data="{ showmenu: false }" class="p-4 pt-8 fixed lg:fixed w-full bg-creamywhite z-50">
+    <div x-data="{ showmenu: false }" class="p-4 pt-8 w-full bg-creamywhite z-50">
       <div id="navbar" class="flex flex-row justify-between items-center">
         <div class="flex flex-row items-center md:gap-10">
           <div id="logo">
@@ -13,18 +13,14 @@ import logo from "../assets/images/logo.png";
           </div>
   
           <!-- Desktopmenu (skjult på mobil) -->
-          <nav id="desktopmenu" class="hidden lg:flex gap-12 text-broedtekst pl-[500px]">
+          <nav id="desktopmenu" class="hidden lg:flex gap-12 text-broedtekst pl-[450px]">
             <a href="#" class="hover:text-burned-orange">Højskoleophold</a>
             <a href="#" class="hover:text-burned-orange">Praktisk info</a>
             <a href="#" class="hover:text-burned-orange">Infomøde</a>
             <a href="#" class="hover:text-burned-orange">Om os</a>
   
             <!-- CTA KNAP -->
-            <div>
-              <a href="#">
-                <button class="text-black">TILMELD</button>
-              </a>
-            </div>
+              <Button variant="secondary" size="small"><a href="">TILMELD</a></Button>
           </nav>
         </div>
     
@@ -32,9 +28,7 @@ import logo from "../assets/images/logo.png";
         <div class="flex items-center lg:hidden relative">
           <!-- Mobil Knap til venstre for burgermenuen -->
           <div class="flex items-center ml-2">
-            <a href="#">
-              <button class="text-black">TILMELD</button>
-            </a>
+            <Button variant="mobilsecondary" size="small" href="">TILMELD</Button>
           </div>
     
           <!-- Burgerikon (på højre side) -->

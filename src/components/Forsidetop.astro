@@ -6,33 +6,46 @@ import landingpage from "../assets/images/landingpage.webp";
 ---
 <div class="bg-creamywhite">
 
-    <section class="relative w-full h-screen">
-        <!-- Billedet, som skal være bag teksten -->
-        <Image class="absolute top-0 left-0 w-full lg:h-200 object-cover z-0" src={forside} alt="forsidebillede"/>
+  <section class="relative w-full h-auto lg:h-screen lg:pb-0 pb-36">
+    <!-- Billedet, som skal være bag teksten -->
+    <Image class="absolute top-0 left-0 w-full h-[500px] lg:h-screen object-cover z-0" 
+      src={forside} alt="forsidebillede"/>
+    
+    <!-- Teksten og knappen, som skal være foran billedet -->
+    <div class="relative z-10 lg:pl-16 lg:pt-48 pt-24 lg:text-left flex flex-col items-center lg:items-start">
+      <h1 class="font-pennypacker lg:text-h1 text-h1_mobil text-white text-center">HØJSKOLE I UDLANDET</h1>
+      <p class="font-sans lg:text-h5 font-light text-white">Tag på dit livs eventyr med andre unge</p>
+      <div class="lg:pt-8 pt-6">
+        <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
+      </div>
+    </div>
+    
+    
+  </section>
+  
       
-        <!-- Teksten og knappen, som skal være foran billedet -->
-        <div class="relative z-10 pl-16 pt-64">
-          <h1 class="font-pennypacker lg:text-h1 text-white">HØJSKOLE I UDLANDET</h1>
-          <p class="font-sans lg:text-h5 font-light text-white">Tag på dit livs eventyr med andre unge</p>
-          <button class="font-sans text-white lg:pt-8 ">SE DESTINATIONER</button>
-        </div>
-      </section>
-      
-<section class="pt-32 md:pt-64">
-    <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil pb-6">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
-    <Image class="" src={landingpage} alt="vandring"/>
-    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
-    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
-    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">Vi glæder os til at lære dig at kende!</p>
-    <button class="font-sans text-black lg:pt-8 ">TILMELD</button>
-    <button class="font-sans text-black lg:pt-8 ">TILMELD INFOMØDE</button>
-    <button class="font-sans text-black lg:pt-8 ">BLIV OPDATERET</button>
+<section class="pt-64 text-center lg:text-left px-8 lg:px-0">
+    <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil pb-6 text-center lg:text-left">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
+    <Image class="rounded-[30px]" src={landingpage} alt="vandring"/>
+    <p class="pt-8 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
+    <p class="pt-4 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
+    <p class="pt-4 font-sans lg:text-broedtekst text-broedtekst_mobil">Vi glæder os til at lære dig at kende!</p>
+
+    <div class="pt-10 flex justify-center lg:justify-start">
+    <Button variant="secondary" size="small" href="">TILMELD</Button>
+  </div>
+  <div class="pt-4 flex justify-center lg:justify-start">
+    <Button variant="primary" size="small" href="">TILMELD INFOMØDE</Button>
+    <Button variant="primary" size="small" href="">BLIV OPDATERET</Button>
+  </div>
 </section>
 
 <section class="pt-32 md:pt-64 pb-32 md:pb-64 text-center">
-    <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil md:pb-4 pb-2">VÆLG DIN DRØMMEDESTINATION</h3>
-    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil">Vi har pakkerejser til adskillige eventyrlige steder i verden. Vælg din drømmedestination nedenfor eller se det fulde overblik under “Se destinationer.”</p>
-    <button class="font-sans text-black lg:pt-8 ">SE DESTINATIONER</button>
+    <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil md:pb-4 pb-2 px-8 lg:px-0">VÆLG DIN DRØMMEDESTINATION</h3>
+    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil px-8 lg:px-0">Vi har pakkerejser til adskillige eventyrlige steder i verden. Vælg din drømmedestination nedenfor eller se det fulde overblik under “Se destinationer.”</p>
+    <div class="flex justify-center pt-10">
+    <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
+  </div>
 </section>
 
 
