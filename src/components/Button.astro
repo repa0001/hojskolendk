@@ -1,5 +1,29 @@
 ---
+// Henter parametrene fra Astro.props
+const { variant= "primary", size = "medium" } = Astro.props; 
+
+//Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
+const buttonStyling = "text-black"; 
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
+const variantClasses = {
+ "secondary": "text-white inline-block grid place-content-center h-6 bg-yellow-500 hover:bg-orange-700 rounded-full",
+ "primary": "text-white inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "secondary2": "text-white inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "primary2": "text-white inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
+
+ "mobilsecondary": "text-sm text-white inline-block grid place-content-center h-2 bg-yellow-500 hover:bg-orange-700 rounded-full",
+ "mobilprimary": "text-sm text-white inline-block grid place-content-center h-2 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "mobilprimary2": "text-sm text-white inline-block grid place-content-center h-2 bg-orange-500 hover:bg-yellow-700 rounded-full",
+};
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.
+const sizeClasses = {
+    "large": "p-6",
+    "medium": "px-5 py-2",
+    "small": "p-2",
+    "none": "px-8 py-2"
+};
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
-</div>
+<!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
+<button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
