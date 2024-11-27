@@ -2,9 +2,9 @@
 const { url="#", cardimage="", cardimagealt="", destination="", afrejse="", varighed="", pris="",}= Astro.props;
 ---
 
-<article class="card @container">
+<article class="card @container border-2 border-black px-2 pb-4">
 <a href={url} class="flex flex-col justify-between h-full">
-    <header class="mb-xs relative">
+    <header class="mb-xs relative pt-4">
         <img src={cardimage} alt={cardimagealt} class="object-cover w-full rounded-[30px]">
     </header>
 
