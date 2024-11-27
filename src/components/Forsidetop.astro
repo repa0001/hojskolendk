@@ -24,6 +24,7 @@ import landingpage_4 from "../assets/images/landingpage_4.webp";
         <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
       </div>
     </div>
+
     
     
   </section>
@@ -32,7 +33,18 @@ import landingpage_4 from "../assets/images/landingpage_4.webp";
 <section class="pt-48 text-center lg:text-left px-8 lg:px-0 block lg:hidden">
     <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil pb-6 text-center lg:text-left">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
     <Image class="rounded-[30px]" src={landingpage} alt="vandring"/>
-    <p class="pt-8 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
+    <section class="my-6 px-2 md:hidden block">
+      <div class="flex space-x-4 justify-end mt-4">
+        <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+        <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+        <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+        <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+        <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+        <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
+        <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
+      </div>
+    </section>
+    <p class="pt-4 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
     <p class="pt-4 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
     <p class="pt-4 font-sans lg:text-broedtekst text-broedtekst_mobil">Vi glæder os til at lære dig at kende!</p>
 
@@ -67,55 +79,77 @@ import landingpage_4 from "../assets/images/landingpage_4.webp";
     <Image class="rounded-[30px] w-full h-full object-cover" src={landingpage} alt="vandring"/>
   </div>
 </section>
+<section class="my-8 px-16 md:px-48 py-2 hidden md:block">
+  <div class="flex space-x-4 justify-end mt-4">
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
+  </div>
+</section>
 
 
-  <!-- KARUSSEL MED CARDS -->
-<section class="pt-32 md:pt-64 pb-32 md:pb-64 text-center">
+  <!-- CARDS -->
+  <section class="pt-24 md:pt-64 pb-32 md:pb-64 text-center">
     <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil md:pb-4 pb-2 px-8 lg:px-0">VÆLG DIN DRØMMEDESTINATION</h3>
     <p class="font-sans lg:text-broedtekst text-broedtekst_mobil px-8 lg:px-64">Vi har pakkerejser til adskillige eventyrlige steder i verden. Vælg din drømmedestination nedenfor eller se det fulde overblik under “Se destinationer.”</p>
     
-    <section class="grid md:grid-cols-4 lg:pt-8 pt-6">
-      <Card
-      url="#"
-      cardimage="landingpage_1.webp"
-      cardimagealt="Billede af destination"
-      destination="Caribien, Hawaii & Mexico"
-      afrejse="29/03/2025"
-      varighed="3 måneder"
-      pris=" 30.000 kr."
-      >
-      </Card>
-      <Card
-        url="#"
-        cardimage="landingpage_2.webp"
-        cardimagealt="Billede af destination"
-        destination="Indien, Nepal & Thailand"
-        afrejse="29/03/2025"
-        varighed="3 måneder"
-        pris=" 30.000 kr."
-      ></Card>
-      <Card
-      url="#"
-      cardimage="landingpage_3.webp"
-      cardimagealt="Billede af destination"
-      destination="Costa Rica, Mexico & Peru"
-      afrejse="29/03/2025"
-      varighed="3 måneder"
-      pris=" 30.000 kr."
-      ></Card>
-      <Card
-      url="#"
-      cardimage="landingpage_4.webp"
-      cardimagealt="Billede af destination"
-      destination="Hawaii, Australien & Japan"
-      afrejse="29/03/2025"
-      varighed="3 måneder"
-      pris=" 30.000 kr."
-      ></Card>
+    <!-- Grid container med 4 kolonner på desktop (md) -->
+    <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-4 lg:pt-8 pt-6">
+        
+        <!-- Første Card - Dette skal altid vises -->
+        <Card
+            url="#"
+            cardimage="landingpage_1.webp"
+            cardimagealt="Billede af destination"
+            destination="Caribien, Hawaii & Mexico"
+            afrejse="29/03/2025"
+            varighed="3 måneder"
+            pris="30.000 kr."
+        ></Card>
+
+        <!-- Andet Card - Skjules på mobil, vises fra 640px og op -->
+         <div class="hidden md:block">
+        <Card
+            url="#"
+            cardimage="landingpage_2.webp"
+            cardimagealt="Billede af destination"
+            destination="Indien, Nepal & Thailand"
+            afrejse="29/03/2025"
+            varighed="3 måneder"
+            pris="30.000 kr."
+        ></Card></div>
+
+        <!-- Tredje Card - Skjules på mobil, vises fra 640px og op -->
+        <div class="hidden md:block">
+        <Card
+            url="#"
+            cardimage="landingpage_3.webp"
+            cardimagealt="Billede af destination"
+            destination="Costa Rica, Mexico & Peru"
+            afrejse="29/03/2025"
+            varighed="3 måneder"
+            pris="30.000 kr."
+            class="hidden md:block"
+        ></Card></div>
+
+        <!-- Fjerde Card - Skjules på mobil, vises fra 640px og op -->
+        <div class="hidden md:block">
+        <Card
+            url="#"
+            cardimage="landingpage_4.webp"
+            cardimagealt="Billede af destination"
+            destination="Hawaii, Australien & Japan"
+            afrejse="29/03/2025"
+            varighed="3 måneder"
+            pris="30.000 kr."
+            class="hidden md:block"
+        ></Card></div>
+    </section>
+    <div class="flex justify-center pt-10">
+      <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
+    </div>
 </section>
-<div class="flex justify-center pt-10">
-  <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
-</div>
-
-
-</div>
