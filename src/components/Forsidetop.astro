@@ -3,6 +3,11 @@ import Button from "../components/Button.astro";
 import { Image } from 'astro:assets';
 import forside from "../assets/images/forside.webp";
 import landingpage from "../assets/images/landingpage.webp";
+import Card from "../components/Card.astro";
+import landingpage_1 from "../assets/images/landingpage_1.webp";
+import landingpage_2 from "../assets/images/landingpage_2.webp";
+import landingpage_3 from "../assets/images/landingpage_3.webp";
+import landingpage_4 from "../assets/images/landingpage_4.webp";
 ---
 <div class="bg-creamywhite">
 
@@ -24,7 +29,7 @@ import landingpage from "../assets/images/landingpage.webp";
   </section>
   
 <!--SECTION I MOBILVERSION, SKJULT I DESKTOP -->
-<section class="pt-64 text-center lg:text-left px-8 lg:px-0 block lg:hidden">
+<section class="pt-48 text-center lg:text-left px-8 lg:px-0 block lg:hidden">
     <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil pb-6 text-center lg:text-left">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
     <Image class="rounded-[30px]" src={landingpage} alt="vandring"/>
     <p class="pt-8 font-sans lg:text-broedtekst text-broedtekst_mobil">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
@@ -41,13 +46,20 @@ import landingpage from "../assets/images/landingpage.webp";
 </section>
 
 <!-- SECTION MED GRID I DESKTOPVERSION, SKJULT I MOBIL -->
-<section class="pt-64 px-48 hidden lg:grid lg:grid-cols-2 lg:grid-rows-1">
+<section class="pt-64 px-48 hidden lg:grid lg:grid-cols-2 lg:grid-rows-1 gap-20">
   <!-- Venstre kolonne med tekst -->
   <div class="col-span-1">
     <h3 class="text-black font-pennypacker lg:text-h3 pb-6">ET HØJSKOLEOPHOLD DU ALDRIG GLEMMER</h3>
     <p class="pt-4 font-sans lg:text-broedtekst">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
     <p class="pt-4 font-sans lg:text-broedtekst">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.</p>
     <p class="pt-4 font-sans lg:text-broedtekst">Vi glæder os til at lære dig at kende!</p>
+    <div class="pt-10">
+    <Button variant="secondary" size="small" href="">TILMELD</Button>
+  </div>
+    <div class="pt-4 flex justify-start">
+      <Button variant="primary" size="small" href="">TILMELD INFOMØDE</Button>
+      <Button variant="primary" size="small" href="">BLIV OPDATERET</Button>
+    </div>
   </div>
 
   <!-- Højre kolonne med billede -->
@@ -57,13 +69,50 @@ import landingpage from "../assets/images/landingpage.webp";
 </section>
 
 
-
-
-
-
+  <!-- KARUSSEL MED CARDS -->
 <section class="pt-32 md:pt-64 pb-32 md:pb-64 text-center">
     <h3 class="text-black font-pennypacker lg:text-h3 text-h3_mobil md:pb-4 pb-2 px-8 lg:px-0">VÆLG DIN DRØMMEDESTINATION</h3>
-    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil px-8 lg:px-0">Vi har pakkerejser til adskillige eventyrlige steder i verden. Vælg din drømmedestination nedenfor eller se det fulde overblik under “Se destinationer.”</p>
+    <p class="font-sans lg:text-broedtekst text-broedtekst_mobil px-8 lg:px-64">Vi har pakkerejser til adskillige eventyrlige steder i verden. Vælg din drømmedestination nedenfor eller se det fulde overblik under “Se destinationer.”</p>
+    
+    <section class="grid md:grid-cols-4 gap-6 lg:pt-8 pt-6">
+      <Card
+      url="#"
+      cardimage="landingpage_1.webp"
+      cardimagealt="Billede af destination"
+      destination="Caribien, Hawaii & Mexico"
+      afrejse="29/03/2025"
+      varighed="3 måneder"
+      pris="30.000 kr."
+      >
+      </Card>
+      <Card
+        url="#"
+        cardimage="landingpage_2.webp"
+        cardimagealt="Billede af destination"
+        destination="Indien, Nepal & Thailand"
+        afrejse="29/03/2025"
+        varighed="3 måneder"
+        pris="30.000 kr."
+      ></Card>
+      <Card
+      url="#"
+      cardimage="landingpage_3.webp"
+      cardimagealt="Billede af destination"
+      destination="Costa Rica, Mexico & Colombia"
+      afrejse="29/03/2025"
+      varighed="3 måneder"
+      pris="30.000 kr."
+      ></Card>
+      <Card
+      url="#"
+      cardimage="landingpage_4.webp"
+      cardimagealt="Billede af destination"
+      destination="Hawaii, Australien & Japan"
+      afrejse="29/03/2025"
+      varighed="3 måneder"
+      pris="30.000 kr."
+      ></Card>
+    
     <div class="flex justify-center pt-10">
     <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
   </div>

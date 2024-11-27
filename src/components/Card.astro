@@ -1,0 +1,24 @@
+---
+const { url="#", cardimage="", cardimagealt="", destination="", afrejse="", varighed="", pris="",}= Astro.props;
+---
+
+<article class="card @container">
+<a href={url} class="flex flex-col justify-between h-full">
+    <header class="mb-xs relative">
+        <img src={cardimage} alt={cardimagealt} class="object-cover w-full rounded-[30px]">
+    </header>
+
+    <section class="">
+        <h3 class="pt-6 lg:text-h5 text-h5_mobil">{destination}</h3>
+        <div class="flex flex-col @md:flex-row @md:justify-between"> <!--Ændre denne styling -->
+            <div class="venstre grow">  <!--Hvad betyder venstre grow? -->
+                <div class="font-sans font-light lg:text-broedtekst text-broedtekst_mobil"><span>Varighed</span><span></span></div>
+                <div><span></span><span>{varighed}</span></div>
+                <div class="font-sans font-light lg:text-broedtekst text-broedtekst_mobil"><span>Næste afrejse</span><span></span></div>
+                <div><span></span><span>{afrejse}</span></div>
+                <div class="font-sans font-light lg:text-link text-link_mobil"><span>Pris:</span><span>{pris}</span></div>
+            </div>
+        </div>
+    </section>
+</a>
+</article>
