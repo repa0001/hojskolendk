@@ -38,7 +38,7 @@ export default {
         "P-3": ["0.8rem", { lineHeight: "1rem" }],
         "P-list": ["0.5rem", { lineHeight: "1rem" }],
         link: ["1.25rem", { lineHeight: "normal" }],
-        link_mobil: ["0.68rem", { lineHeight: "normal" }],
+        link_mobil: ["1.25rem", { lineHeight: "normal" }],
 
         /* header */
         h1: ["4rem", { lineHeight: "normal" }],
@@ -50,7 +50,10 @@ export default {
         h4: ["1.8rem", { lineHeight: "normal" }],
         h4_mobil: ["1.25rem", { lineHeight: "normal" }],
         h5: ["1.5rem", { lineHeight: "normal" }],
-        h5_mobil: ["0.8rem", { lineHeight: "normal" }],
+        h5_mobil: [
+          "1.5rem",
+          { lineHeight: "normal" },
+        ] /* evt slette den, da den er ens med desktop? */,
       },
 
       /* Tilføj dit fontvægt-hierarki nedenfor */
