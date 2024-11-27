@@ -37,8 +37,8 @@ export default {
         "P-2_mobil": ["1rem", { lineHeight: "normal" }],
         "P-3": ["0.8rem", { lineHeight: "1rem" }],
         "P-list": ["0.5rem", { lineHeight: "1rem" }],
-        Link: ["1.25rem", { lineHeight: "normal" }],
-        Link_mobil: ["0.68rem", { lineHeight: "normal" }],
+        link: ["1.25rem", { lineHeight: "normal" }],
+        link_mobil: ["0.68rem", { lineHeight: "normal" }],
 
         /* header */
         h1: ["4rem", { lineHeight: "normal" }],
