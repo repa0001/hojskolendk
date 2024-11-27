@@ -66,9 +66,9 @@ export default {
 
       /* Borders - borderstørrelser herunder */
       borderWidth: {
-        DEFAULT: "1px",
         0: "0px",
         0.5: "0.5px",
+        1: "1px",
         2: "2px",
       },
 
