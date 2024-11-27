@@ -45,7 +45,7 @@ export default {
         h1_mobil: ["2.75rem", { lineHeight: "normal" }],
         h2: ["2.8rem", { lineHeight: "normal" }],
         h2_mobil: ["1.4rem", { lineHeight: "normal" }],
-        h3: ["1.8rem", { lineHeight: "1.3rem" }],
+        h3: ["1.8rem", { lineHeight: "normal" }],
         h3_mobil: ["1.6rem", { lineHeight: "normal" }],
         h4: ["1.8rem", { lineHeight: "normal" }],
         h4_mobil: ["1.25rem", { lineHeight: "normal" }],
