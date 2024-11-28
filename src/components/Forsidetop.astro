@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import forside from "../assets/images/forside.webp";
 import landingpage from "../assets/images/landingpage.webp";
 import Card from "../components/Card.astro";
+import forside_ny from "../assets/images/forside_ny.webp";
 import landingpage_1 from "../assets/images/landingpage_1.webp";
 import landingpage_2 from "../assets/images/landingpage_2.webp";
 import landingpage_3 from "../assets/images/landingpage_3.webp";
@@ -13,14 +14,16 @@ import landingpage_4 from "../assets/images/landingpage_4.webp";
 
   <section class="relative w-full h-auto lg:h-screen lg:pb-0 pb-36">
     <!-- Billedet, som skal være bag teksten -->
-    <Image class="absolute top-0 left-0 w-full h-[500px] lg:h-screen object-cover z-0" 
+    <Image class="absolute top-0 left-0 w-full h-[500px] block lg:hidden object-cover z-0" 
+      src={forside} alt="forsidebillede"/>
+      <Image class="absolute top-0 left-0 w-full lg:h-[560px] hidden lg:block object-cover z-0" 
       src={forside} alt="forsidebillede"/>
     
     <!-- Teksten og knappen, som skal være foran billedet -->
-    <div class="relative z-10 lg:pl-16 lg:pt-48 pt-24 lg:text-left flex flex-col items-center lg:items-start">
+    <div class="relative z-10 lg:pl-16 lg:pt-36 pt-24 lg:text-left flex flex-col items-center lg:items-start">
       <h1 class="font-pennypacker lg:text-h1 text-h1_mobil text-white text-center">HØJSKOLE I UDLANDET</h1>
       <p class="font-sans lg:text-h5 font-light text-white">Tag på dit livs eventyr med andre unge</p>
-      <div class="lg:pt-8 pt-6">
+      <div class="pt-6">
         <Button variant="primary" size="medium" href="">SE DESTINATIONER</Button>
       </div>
     </div>

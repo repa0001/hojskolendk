@@ -50,10 +50,7 @@ export default {
         h4: ["1.8rem", { lineHeight: "normal" }],
         h4_mobil: ["1.25rem", { lineHeight: "normal" }],
         h5: ["1.5rem", { lineHeight: "normal" }],
-        h5_mobil: [
-          "1.5rem",
-          { lineHeight: "normal" },
-        ] /* evt slette den, da den er ens med desktop? */,
+        h5_mobil: ["1rem", { lineHeight: "normal" }],
       },
 
       /* Tilføj dit fontvægt-hierarki nedenfor */
