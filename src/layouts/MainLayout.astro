@@ -2,6 +2,8 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Forsidetop from "../components/Forsidetop.astro";
+import Forsidebund from "../components/Forsidebund.astro";
+import Card from "../components/Card.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
@@ -37,7 +39,6 @@ const { title } = Astro.props;
 		
 		<main>
 			<slot />
-			<Forsidetop></Forsidetop>
 		</main>
 
         <footer>
