@@ -3,18 +3,18 @@
 const { variant= "primary", size = "medium" } = Astro.props; 
 
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
-const buttonStyling = "text-white font-pennypacker"; 
+const buttonStyling = "text-black"; 
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 const variantClasses = {
- "secondary": "inline-block grid place-content-center h-6 bg-yellow-500 hover:bg-orange-700 rounded-full",
- "primary": "inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
- "secondary2": "inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
- "primary2": "inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "secondary": "text-white inline-block grid place-content-center h-6 bg-yellow-500 hover:bg-orange-700 rounded-full",
+ "primary": "text-white inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "secondary2": "text-white inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "primary2": "text-white inline-block grid place-content-center h-6 bg-orange-500 hover:bg-yellow-700 rounded-full",
 
- "mobilsecondary": "text-sm inline-block grid place-content-center h-2 bg-yellow-500 hover:bg-orange-700 rounded-full",
- "mobilprimary": "text-sm inline-block grid place-content-center h-2 bg-orange-500 hover:bg-yellow-700 rounded-full",
- "mobilprimary2": "text-sm inline-block grid place-content-center h-2 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "mobilsecondary": "text-sm text-white inline-block grid place-content-center h-2 bg-yellow-500 hover:bg-orange-700 rounded-full",
+ "mobilprimary": "text-sm text-white inline-block grid place-content-center h-2 bg-orange-500 hover:bg-yellow-700 rounded-full",
+ "mobilprimary2": "text-sm text-white inline-block grid place-content-center h-2 bg-orange-500 hover:bg-yellow-700 rounded-full",
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.
