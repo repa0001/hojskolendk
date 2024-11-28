@@ -36,13 +36,13 @@ import verdensskove from "../assets/images/verdensskove.webp";
 										
 											<div class=" mt-5 sm:hidden flex items-center justify-center">
 													<!-- Knappen vises kun på mobil og skjules på større skærme -->
-													<Button variant="mobilprimary" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
+													<Button variant="mobilsecondary" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
 													</Button>
 											</div>
 
 											<div class=" mt-5 hidden sm:block">
 													<!-- Knappen vises kun på mobil og skjules på større skærme -->
-													<Button variant="primary" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
+													<Button variant="secondary" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
 													</Button>
 											</div>
 
@@ -57,7 +57,7 @@ import verdensskove from "../assets/images/verdensskove.webp";
 
 
 														<!---------------- lodret streg  ---------------->
-								 <div class="hidden md:block absolute top-6 bottom-0 left-[73%] transform -translate-x-1/2 h-[32.2rem] w-0.5 bg-black"></div>
+							
 								
 										 <!-- <div class="  hidden md:block  h-48 w-px bg-black "></div> -->
 
@@ -99,13 +99,17 @@ import verdensskove from "../assets/images/verdensskove.webp";
                                 src={om} 
                                 alt="forside" 
                           		  />
+                       		 </div>
+
+							     <div class=" idden md:block md:-mt-[27rem] mt-8 ">
+                 				 	  <p class=" font-sans block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">Hvis du har spørgsmål til os vil vi meget gerne svare på dem alle, store og små, <br class="hidden md:block"> så du har ro i maven og føler dig helt tryg, når du tilmelder dig.</p>
+              						  </div>
 
 							    <div class=" mt-5 hidden sm:block ">
 									<!-- Knappen vises kun på mobil og skjules på større skærme -->
-									<Button variant="primary2" size="none"><a href="">KOTAKT OS</a></Button>
+									<Button variant="secondary2" size="none"><a href="">KOTAKT OS</a></Button>
 									</Button>
                 				</div>
-                       		 </div>
 
 
 							   <!--  --------------  --------------  tekst desktop -------------- -------------- -->
@@ -159,7 +163,7 @@ import verdensskove from "../assets/images/verdensskove.webp";
 
 
                 
-                <div class="md:-mt-[27rem] mt-8 ">
+                <div class="block sm:hidden md:-mt-[27rem] mt-8 ">
                     <p class="font-sans block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">Hvis du har spørgsmål til os vil vi meget gerne svare på dem alle, store og små, <br class="hidden md:block"> så du har ro i maven og føler dig helt tryg, når du tilmelder dig.</p>
                 </div>
 
@@ -349,6 +353,7 @@ import verdensskove from "../assets/images/verdensskove.webp";
     <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
   </div>
 </section>
+
 
 	 <!--  --------------  --------------  skov -------------- -------------- -->
 
