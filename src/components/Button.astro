@@ -3,18 +3,19 @@
 const { variant= "primary", size = "medium" } = Astro.props; 
 
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
-const buttonStyling = "text-black"; 
+const buttonStyling = "text-white"; 
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
 const variantClasses = {
- "secondary": "text-white inline-block grid place-content-center h-6 bg-yellow hover:bg-darkorange rounded-full",
- "primary": "text-white inline-block grid place-content-center h-6 bg-darkorange hover:bg-orange rounded-full",
+
+"primary": " inline-block grid place-content-center h-6 bg-orange hover:bg-darkorange rounded-full",
+ "secondary": " inline-block grid place-content-center h-6 bg-darkorange hover:bg-orange rounded-full",
  "secondary2": "text-white inline-block grid place-content-center h-6 bg-darkorange hover:bg-orange rounded-full",
  "primary2": "text-white inline-block grid place-content-center h-6 bg-darkorange hover:bg-orange rounded-full",
 
- "mobilsecondary": "text-sm text-white inline-block grid place-content-center h-2 bg-orange hover:bg-darkorange rounded-full",
- "mobilprimary": "text-sm text-white inline-block grid place-content-center h-2 bg-darkorange hover:bg-orange rounded-full",
- "mobilprimary2": "text-sm text-white inline-block grid place-content-center h-2 bg-darkorange hover:bg-orange rounded-full",
+ "mobilprimary": "text-sm text-white inline-block grid place-content-center h-2 bg-orange hover:bg-darkorange rounded-full",
+ "mobilsecondary": "text-sm text-white inline-block grid place-content-center h-2 bg-darkorange hover:bg-orange rounded-full",
+ "mobilsecondary2": "text-sm text-white inline-block grid place-content-center h-2 bg-darkorange hover:bg-orange rounded-full",
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.
