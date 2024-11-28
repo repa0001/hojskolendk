@@ -1,0 +1,387 @@
+---
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import om from "../assets/images/om.webp";
+import verdensskove from "../assets/images/verdensskove.webp";
+
+
+---
+
+
+        <!--  --------------  --------------  tilmeld dig vores næste infomøde  -------------- -------------- -->
+<section class="bg-creamywhite">
+
+        <hr class="border-t-2 border-black">
+
+
+    <section class="  md:mt-28 px-8 md:px-32 py-2 md:mb-28 mb-6">
+
+                <div>
+                        <h3 class=" mt-10 text-h3_mobil md:text-h3 font-pennypacker block sm:text-center sm:flex sm:justify-start sm:items-start text-center">
+                            TILMELD DIG VORES NÆSTE INFOMØDE
+                        </h3>
+				 </div>
+
+
+				 
+				 <!--  --------------  -------------- tekst til infomøde opdelt i grid --------------  -------------- -->
+
+				 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full ">
+
+										<div>
+											<p class=" mt-5 font-sans text-p_mobil md:text-p block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+												Kom og hør om vores eventyrlige højskoleophold! Vi fortæller, hvem HÖJSKOLENDK er, hvad du kan opleve, hvordan vi underviser uden kedelige klasseværelser, og giver praktisk info om alt fra økonomi til pakkelister. Afslut med ’Rejsefeber Café’, hvor du kan stille spørgsmål og møde tidligere elever, rejseledere og ejerne.
+											</p>
+										
+											<div class=" mt-5 sm:hidden flex items-center justify-center">
+													<!-- Knappen vises kun på mobil og skjules på større skærme -->
+													<Button variant="mobilprimary" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
+													</Button>
+											</div>
+
+											<div class=" mt-5 hidden sm:block">
+													<!-- Knappen vises kun på mobil og skjules på større skærme -->
+													<Button variant="primary" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
+													</Button>
+											</div>
+
+											
+										</div>
+
+										
+
+             <!--  --------------  tidspunkt til infomøde -------------- -->
+
+							<div class=" md:ml-72 grid grid-cols-2 md:gap-10 mt-6 sm:grid-cols-1 items-center justify-center text-center">
+
+
+														<!---------------- lodret streg  ---------------->
+								 <div class="hidden md:block absolute top-6 bottom-0 left-[73%] transform -translate-x-1/2 h-[32.2rem] w-0.5 bg-black"></div>
+								
+										 <!-- <div class="  hidden md:block  h-48 w-px bg-black "></div> -->
+
+								<!-- ændre streg tykkelse  -->
+								<div class=" ml-20 font-sans sm:ml-40 text-P-2_mobil md:text-P-2 font-w font-light leading-relaxed"> 
+									<div class=" md:-mt-[1rem]  "></div>
+										<p class=""> KBH </p>
+										<p>D. 10/10</p>
+									</div>
+
+									<div class="sm:-ml-48 sm:space-y-2 md:ml-[10rem] font-sans text-P-2_mobil md:text-P-2 font-w font-light leading-relaxed">
+										<p> AARHUS </p>
+										<p>D. 20/10</p> 
+									</div>
+						</div>
+
+	 </div>
+
+				 
+
+
+    </section>
+
+        <hr class="border-t-2 border-black">
+
+
+
+        <!--  --------------  --------------  om höjskolendk  -------------- -------------- -->
+
+        <section class="grid grid-cols-1 md:grid-cols-2 w-full px-16 md:gap-40 md:px-48 py-2 md:mb-28 mb-10">
+
+                <div>
+
+					<div>
+						        <!--  --------------  --------------  billede desktop -------------- -------------- -->
+						    <div class="mt-28 hidden md:block ">
+                       		     <Image 
+                                class="max-w-[300px] lg:max-w-[600px] rounded" 
+                                src={om} 
+                                alt="forside" 
+                          		  />
+
+							    <div class=" mt-5 hidden sm:block ">
+									<!-- Knappen vises kun på mobil og skjules på større skærme -->
+									<Button variant="primary2" size="none"><a href="">KOTAKT OS</a></Button>
+									</Button>
+                				</div>
+                       		 </div>
+
+
+							   <!--  --------------  --------------  tekst desktop -------------- -------------- -->
+			</div>
+
+					<div>  
+                        <h3 class=" md:mt-28 mt-10 text-h3_mobil md:text-h3 font-pennypacker block sm:text-center sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+                            OM HöJSKOLENDK
+                        </h3>
+
+                        <p class=" mt-5 font-sans text-p_mobil md:text-p block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+                            HÖJSKOLENDK er en dansk højskole, der blev stiftet i 2010. Vi har specialiseret os i højskoleophold i udlandet og tilbyder dig en unik, spændende og fantastisk rejseoplevelse. For at give dig de tryggeste rammer om dit højskoleophold, er HÖJSKOLENDK medlem af Rejsegarantifonden. Vi har medlemsnummer 2885.
+                        </p>
+
+						<br>
+
+             <!--  -------------- tekst -------------- -->
+
+                        <div class="flex justify-center items-center sm:hidden font-sans">
+                            <Image 
+                                class="mt-10 max-w-[300px] lg:max-w-[600px] rounded-[30px]" 
+                                src={om} 
+                                alt="forside" 
+                            />
+                        </div>
+
+                        
+                        <h5 class=" mt-10 mb-2 font-sans text-h5_mobil md:text-h5 font-bold block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+							Fællesskab og dannelse</h5>
+                        <p class=" mt-2 mb-10  block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+                            Som rejsehøjskole er vores to vigtigste grundværdier fællesskab og dannelse. Med udgangspunkt i disse værdier kan du på højskole i udlandet bruge din sabbatår rejse på fx frivilligt arbejde, vilde adventure- og naturoplevelser, lære sprog og spændende personlig udvikling der giver dig mere selvtillid, selvindsigt og selvværd. Glæd dig også til inspirerende undervisning, der levende og aktivt forener det lærende med det legende. Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet!
+                        </p>
+
+					
+
+                        <h5 class=" mt-10 mb-2   text-h5_mobil md:text-h5 font-bold block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed"
+                        >Find dybere mening</h5>
+                        <p class=" mt-2 mb-10  block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+                            Med vores unikke kombination af højskole, grupperejser, rejseeventyr, frihed, kulturmøder og spændende undervisning, vil vi inspirere dig til at finde ind til hvad der er vigtigst for dig i livet – hvad du virkeligt brænder for og kan mærke er meningsfuldt – så du kan forfølge dine drømme.
+                            På inspirerende og aktiv vis flytter du dine grænser og bliver en endnu stærkere udgave af dig selv.
+                        </p>
+
+					
+                        
+                        <h5 class=" mt-10 mb-2  text-h5_mobil md:text-h5 font-bold block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+							Undervisning</h5>
+                        <p class=" mt-2 mb-10 font-sans block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">
+                            Vores undervisning tager udgangspunkt i fællesskab, det enkelte menneske og respekt for andre. På vores grupperejser underviser vi i forskellige spændende og inspirerende fag som fx Teambuilding, Frivilligt Arbejde & Kulturforståelse, Sport & Adventure og Selvudvikling & Kommunikation. Vores undervisere er nøje udvalgt og har et særdeles højt engagement og fagligt niveau.
+                        </p>
+                </div>
+
+
+                
+                <div class="md:-mt-[27rem] mt-8 ">
+                    <p class="font-sans block sm:text-left sm:flex sm:justify-start sm:items-start text-center leading-relaxed">Hvis du har spørgsmål til os vil vi meget gerne svare på dem alle, store og små, <br class="hidden md:block"> så du har ro i maven og føler dig helt tryg, når du tilmelder dig.</p>
+                </div>
+
+                <div class=" mt-5 mb-10 sm:hidden flex items-center justify-center">
+                        <!-- Knappen vises kun på mobil og skjules på større skærme -->
+                        <Button variant="mobilprimary2" size="medium" class="">    <a href="" class="">TILMELD INFOMØDE</a>
+                        </Button>
+                </div>
+
+    	 </div>
+
+    </section>
+
+
+ 									   <hr class="border-t-2 border-black md:-mt-[12rem]">
+
+        <!--  --------------  --------------  om Anmeldesler   -------------- -------------- -->
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full px-16 md:px-32 py-2  text-center  ">
+
+							<!-- sm:text-left sm:flex sm:justify-start sm:items-start text-center -->
+							<!-- md:mt-28 px-8 md:px-32 py-2 md:mb-28 mb-6 -->
+
+            <div>
+                <h3 class="text-h3_mobil md:text-h3 font-pennypacker md:mt-28 leading-relaxed">REJSER SIDEN 2014</h3>
+            </div>
+
+ 					<!--  --------------   Anmeldesler i tal  -------------- -->
+            <div class=" md:-ml-[10rem] text-p_mobil md:text-p font-regular grid grid-cols-4 md:mt-40">
+
+						<div class=" grid grid-cols-1 md:grid-cols-2 md:ml-10">
+							<div class="text-link md:text-P-2 font-light sm:ml-20 md:ml-0 leading-relaxed"><p>94%</p> </div>
+							<div class="text-p_mobil md:text-p font-light md:ml[1rem] sm:ml-20 md:ml-0 leading-relaxed"><p>Anbefaler HÖJSKOLENDK</p> </div>
+						</div> 
+
+						<div class=" md:ml-24 grid grid-cols-1 md:grid-cols-2">
+							<div class="text-link md:text-P-2 font-light leading-relaxed"><p>2.000+</p> </div>
+							<div class="md:ml-[3.6rem] text-p_mobil md:text-p font-light md:ml[1rem] leading-relaxed"><p> Glade og <br> skønne elever</p></div>
+						</div>
+
+						<div class=" md:ml-24 grid grid-cols-1 md:grid-cols-2">
+							<p class="text-link md:text-P-2 font-light leading-relaxed">4.8/5</p>
+							<p class="md:ml-[1.7rem] text-p_mobil md:text-p font-light md:ml[1rem] leading-relaxed">Trustpilot</p>
+						</div>
+
+						<div class="md:ml-24 grid grid-cols-1 md:grid-cols-2">
+							<p class="text-link md:text-P-2 font-light leading-relaxed">8.7/10</p>
+							<p class="md:ml-[2.2rem] text-p_mobil md:text-p font-light md:ml[1rem] leading-relaxed">Tilfredshed efter ophold</p>
+						</div>
+            </div>
+
+        </section>
+
+		  				 <hr class=" mt-28 border-t-2 border-black">
+ <!--  --------------  --------------  UNDERVISNINGSFAG   -------------- -------------- -->
+
+			<section class="mt:16 ">
+
+				<h3 class=" text-h3_mobil md:text-h3 px-16 md:px-32 py-2 md:mt-36  mt-10 font-pennypacker block sm:text-left sm:flex sm:justify-start sm:items-start text-center"> 
+					UNDERVISNINGSFAG </h3>
+
+				 <hr class=" mt-10 border-t-1 border-black">
+
+						<div class="px-16 md:px-32 py-2">
+								<h5 class="text-h5_mobil md:text-h5 font-bold md:mt-10 mt-5 ">
+								Selvudvikling & kommunikation
+								</h5>
+
+								<div class=" md:mt-5 mt-2 grid grid-cols-1 md:grid-cols-2 gap-4 w-full leading-relaxed">
+
+									<p>
+										Det vigtigste for os er fællesskabet, for vi skal alle have det godt og trives, når vi er langt væk hjemmefra på højskole-eventyr. Og vores fællesskab bliver hurtigt stærkt, når vi bl.a. udfordrer jer med tankevækkende, inspirerende og sjove samarbejdsøvelser. Der bliver grinet, grublet, heppet og jublet, når I giver den gas med de særligt udvalgte team-øvelser og opgaver.
+									</p>
+
+									<p class=" ml-20 text-P-3_mobil md:text-P-3 font-regular hidden md:block leading-relaxed">
+										“Selvudvikling & Kommunikation er et fag for dem som der vil lære sig selv bedre at kende, men uden brug af selvhjælpsbøger og andet pjat. Ved hjælp af de dygtige undervisere kan du finde frem til hvad der er dine styrker, og hvad der er dit potentiale. Og de støtter dig 110 % – hele vejen i lige præcis din retning.”
+											<br>Laura Iversen, 20 år
+									</p>
+							
+									<div class="sm:hidden text-right">
+											<Link href="/hojskole" variant="primary" size="large">LÆS MERE</Link>
+									</div>
+							
+								</div>
+						</div>
+                                  <!--  --------------  --------------  ny deling   -------------- -------------- -->
+
+					 <hr class=" mt-10 border-t-1 border-black">
+
+						<div class="px-16 md:px-32 py-2">
+								<h5 class=" text-h5_mobil font-bold md:text-h5 md:mt-10 mt-5">
+									Fællesskab og dannelse 
+								</h5>
+
+								<div class=" md:mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-2 ">
+
+									<p class="text-p_mobil md:text-p leading-relaxed">
+										I faget ‘Selvudvikling & Kommunikation’ handler det om dig, vigtige livsværktøjer, styrker, retning og det at skabe sig et meningsfuldt liv. Med udgangspunkt i spændende øvelser, inspirerende oplæg, åben dialog, nysgerrighed og vigtige spørgsmål, lærer du dig selv bedre at kende.
+									</p>
+
+									<p class="text-P-3_mobil md:text-P-3 font-regular  hidden md:block ml-20 leading-relaxed">
+										“Frivilligt arbejde gav mig enormt meget. Det at kunne hjælpe andre og give noget videre uden at modtage en belønning for det føles helt særligt. Man oplever nogle nye sider af sig selv, synes jeg.”
+											<br> Emil Jensen, 22 år
+									</p>
+							
+									<div class="sm:hidden text-right">
+											<Link href="/hojskole" variant="primary" size="large">LÆS MERE</Link>
+									</div>
+							
+								</div>
+						</div>
+
+
+						 <!--  --------------  --------------  ny deling   -------------- -------------- -->
+
+					 <hr class=" mt-10 border-t-1 border-black">
+
+						<div class="px-16 md:px-32 py-2">
+								<h5 class="text-h5_mobil md:text-h5 font-bold  md:mt-10 mt-5 ">
+									Sport & adventure
+								</h5>
+
+								<div class="md:mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-5 ">
+
+									<p class="text-p_mobil md:text-p font-regular leading-relaxed">
+									Sport & Adventure’ er et fag med fuld fart på, hvor vi er aktive, dyrker teamsport og kaster os ud i fede adventure- og outdoor-aktiviteter. Vi udvikler os mentalt, flytter vores grænser og skaber endnu stærkere relationer i vores skønne fællesskab.	
+									</p>
+
+									<p class=" text-P-3_mobil md:text-P-3 font-regular  hidden md:block ml-20 leading-relaxed">
+										“Sport & adventure er noget af det fedeste jeg længe har prøvet. Man får skubbet sine grænser og prøvet ting man ellers ikke ville hjemme i Danmark. Efter at have haft faget har jeg en større tro på, at jeg godt kan selvom noget virker udfordrende.”
+											<br> Lisa Poulsen, 20 år
+									</p>
+							
+									<div class="sm:hidden text-right">
+											<Link href="/hojskole" variant="primary" size="large">LÆS MERE</Link>
+									</div>
+							
+								</div>
+						</div>
+
+
+
+					 <!--  --------------  --------------  ny deling   -------------- -------------- -->
+
+					 <hr class="mt-10 border-t-1 border-black">
+
+						<div class="px-16 md:px-32 py-2">
+								<h5 class="text-h5_mobil md:text-h5 font-bold  md:mt-10 mt-5">
+									Teambuilding
+								</h5>
+
+								<div class=" md:mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+
+									<p class="text-p_mobil md:text-p font-regular mt-2 leading-relaxed">
+										Det vigtigste for os er fællesskabet, for vi skal alle have det godt og trives, når vi er langt væk hjemmefra på højskole-eventyr. Og vores fællesskab bliver hurtigt stærkt, når vi bl.a. udfordrer jer med tankevækkende, inspirerende og sjove samarbejdsøvelser. Der bliver grinet, grublet, heppet og jublet, når I giver den gas med de særligt udvalgte team-øvelser og opgaver.
+									</p>
+
+									<p class="text-P-3_mobil md:text-P-3 font-regular  hidden md:block ml-20 leading-relaxed">
+										“Teambuilding gav mig rigtigt meget fagligt såvel som menneskeligt og jeg lærte meget om mig selv og mine styrker og udfordringer i sociale sammenhænge. Det gav mig nogle kompetencer, som jeg faktisk benytter i min hverdag og som flere arbejdspladser har sat pris på. Ydermere er faget et kæmpe plus på CV’et.”
+											<br> Nanna Benedictus, 19 år
+									</p>
+							
+									<div class="sm:hidden text-right">
+											<Link href="/hojskole" variant="primary" size="large">LÆS MERE</Link>
+									</div>
+							
+								</div>
+						</div>
+
+						 <hr class=" mt-10 border-t-1 border-black">
+
+						 
+
+			</section>
+
+
+					 <!--  --------------  --------------  prikker  -------------- -------------- -->
+
+			<section class="my-8 px-16 md:px-32 py-2">
+  <div class="flex space-x-4 justify-end mt-4">
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
+    <div class="w-4 h-4 bg-darkorange rounded-full hidden md:block"></div>
+  </div>
+</section>
+
+	 <!--  --------------  --------------  skov -------------- -------------- -->
+
+	<section class="relative w-full md:min-h-screen md:mt-28 px-8 md:px-32 py-2 md:-mb-[18rem] ">
+
+  <!-- Billedet, som skal være bag teksten -->
+  <Image class=" lg:h-[50vh] absolute top-0 left-0  h-full object-cover z-0" 
+  src={verdensskove} alt="forsidebillede"/>
+
+  <!-- Sort overlay -->
+  <div class="absolute inset-0 bg-black opacity-50 z-10 w-full md:h-[390px]"></div>
+  
+  <!-- Teksten, som skal være foran billedet -->
+  <div class="relative z-10 md:mt-[8rem] mt-[5rem]  lg:text-left flex flex-col items-center lg:items-start">
+
+    <!-- Titel -->
+    <h3 class="font-pennypacker lg:text-h3 text-h3_mobil text-white text-left sm:mt-10">VI STØTTER VERDENS SKOVE</h3>
+
+    <!-- Tekst -->
+    <div class="pt-4 text-white block font-sans text-left text-p_mobil md:text-p sm:justify-start sm:mb-20 mt-[0rem] md:mt-[0rem] ">
+      <p class="leading-relaxed block sm:text-left sm:flex sm:justify-start sm:items-start text-center">
+        Vi tror på at alle kan gøre en forskel - selv en højskole fra Danmark. Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig brug af verdens skove. Vi har allerede fredet 106.785 m2 regnskov. Dét er vi stolte af i HÖjSKOLENDK.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+				
+	 <!-- skov slut -->
+	 
+
+
+</section>
+
+

@@ -32,25 +32,25 @@ export default {
       fontSize: {
         /* paragraph */
         broedtekst: ["1rem", { lineHeight: "1.375rem" }],
-        broedtekst_mobil: ["0.5rem", { lineHeight: "0.68rem" }],
+        broedtekst_mobil: ["0.9rem", { lineHeight: "1.25rem" }],
         "P-2": ["2rem", { lineHeight: "normal" }],
         "P-2_mobil": ["1rem", { lineHeight: "normal" }],
         "P-3": ["0.8rem", { lineHeight: "1rem" }],
         "P-list": ["0.5rem", { lineHeight: "1rem" }],
-        Link: ["1.25rem", { lineHeight: "normal" }],
-        Link_mobil: ["0.68rem", { lineHeight: "normal" }],
+        link: ["1.25rem", { lineHeight: "normal" }],
+        link_mobil: ["1.25rem", { lineHeight: "normal" }],
 
         /* header */
         h1: ["4rem", { lineHeight: "normal" }],
-        h1_mobil: ["2.25rem", { lineHeight: "normal" }],
+        h1_mobil: ["2.75rem", { lineHeight: "normal" }],
         h2: ["2.8rem", { lineHeight: "normal" }],
         h2_mobil: ["1.4rem", { lineHeight: "normal" }],
-        h3: ["2rem", { lineHeight: "1.3rem" }],
-        h3_mobil: ["1rem", { lineHeight: "1.25rem" }],
+        h3: ["1.8rem", { lineHeight: "normal" }],
+        h3_mobil: ["1.6rem", { lineHeight: "normal" }],
         h4: ["1.8rem", { lineHeight: "normal" }],
         h4_mobil: ["1.25rem", { lineHeight: "normal" }],
         h5: ["1.5rem", { lineHeight: "normal" }],
-        h5_mobil: ["0.8rem", { lineHeight: "normal" }],
+        h5_mobil: ["1rem", { lineHeight: "normal" }],
       },
 
       /* Tilføj dit fontvægt-hierarki nedenfor */
@@ -63,9 +63,9 @@ export default {
 
       /* Borders - borderstørrelser herunder */
       borderWidth: {
-        DEFAULT: "1px",
         0: "0px",
         0.5: "0.5px",
+        1: "1px",
         2: "2px",
       },
 
@@ -76,10 +76,5 @@ export default {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/container-queries"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
